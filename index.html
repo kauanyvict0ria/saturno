@@ -1,90 +1,327 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type= "text/css" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-    <title>..:: saturno ::.. </title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <title>..:: saturno ::..</title>
 </head>
-<body> 
-    <!-- Aula 15/04/2023 -->
-    <!-- Inicio Menu Responsivo -->
-<header id="header"> 
-    <a id="logo" href="index.html"><img src="./img/logo.avif" alt=""></a>
 
+<body>
+    <!--Aula 15/04/2023-->
+    <!--Início Menu Responsivo-->
+    <header id="header">
+        <a id="logo" href="index.html"><img src="./img/banner 2.jpg"
+                alt="Logo saturno"></a>
+        <nav id="nav">
+            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
+                aria-expanded="false">
+                <span id="hamburger"></span>
 
-</header>
-    <!-- Fim Menu Responsivo -->>
-
-    <!-- Início corousel página principal -->
-    <div id="carouselExampleInterval" class="carousel slide"data-mdb-ride="carousel">
-         </div class="carousel-inner"> 
-            <div class="carousel-item active" data-mdb-interval="100">
-                <img
-                src="./img/carousel_01.jpg"
-                class="d-block w-100"
-                alt="..."
-                />
-            </div>
-            <div class="carousel-item" data-mdb-interval="100">
-                <img
-                src="./img/carousel_02.jpg"
-                class="d-block w-100"
-                alt="..."
-                />
-            </div>
-            <div class="carousel-item" data-mdb-interval="100">
-                <img
-                src="./img/carousel_03.jpg"
-                class="d-block w-100"
-                alt="..."
-                />
-            </div>
-            <div class="carousel-item" data-mdb-interval="100">
-                <img
-                src="./img/carousel_04.jpg"
-                class="d-block w-100"
-                alt="..."
-                />
-            </div>
-            <div class="carousel-item" data-mdb-interval="100">
-                <img
-                src="./img/carousel_05.jpg"
-                class="d-block w-100"
-                alt="..."
-                />
-            </div>
-            <div class="carousel-item" data-mdb-interval="100">
-                <img
-                src="./img/carousel_06.jpg"
-                class="d-block w-100"
-                alt="..."
-                />
-            </div>
-            <!-- Alt + Shift + Seta para baixo, copia contéudo -->
-            <!-- Inicio controle carousel -->
-            <button
-                class="carousel-control-prev"
-                data-mdb-target="#carouselExampleInterval"
-                type="button"
-                data-mdb-slide="prev"
-            >
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previus</span>
             </button>
-            <button
-                class="carousel-control-prev"
-                data-mdb-target="#carouselExampleInterval"
-                type="button"
-                data-mdb-slide="prev"
-            >
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previus</span>
-            </button>
-            <button
+            <ul id="menu" role="menu">
+                <li><a class="linkMenu" href="index.html">Home</a></li>
+                <li><a class="linkMenu" href="produtos.html">Produtos</a></li>
+                <li><a class="linkMenu" href="resenha.html">Resenha</a></li>
+                <li><a class="linkMenu" href="curiosidades.html">Curiosidades</a></li>
+                <li><a class="linkMenu" href="generos.html">Gêneros</a></li>
+                <li><a class="linkMenu" href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Fim Menu Responsivo-->
+
+    <!--inicio corrousel pagina principal-->
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+                <img src="./img/carousel 1.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="./img/carousel 2.webp" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="./img/carousel 3.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="./img/carousel 4.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="./img/carousel 5.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="./img/carousel 6.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="./img/carousel 7.jpg" class="d-block w-100" alt="..." />
+            </div>
+        </div>
+        </div>
+        <!--INICIO CONTROLE CAROUSEL-->
+        <button class="carousel-control-prev" data-bs-target="#carouselExampleInterval" type="button"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" data-bs-target="#carouselExampleInterval" type="button"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
+
+    <!--Fim Controle carousel -->
+    <!--Fim carousel página principal-->
+    <!--Inicio Banner -->
+    <div class="section-banner-home">
+        <div class="container-fluid">
+            <div class="row m-0">
+                <div class="col-12 col-md-6">
+                    <figure>
+                        <img src="./img/banner saturn.avif" class="img-fluid" alt="banner-home">
+                    </figure>
+                </div>
+                <div class="col-12 col-md-6">
+                    <section class="texto-banner d-none d-md-block">
+                        <h1> Venha conhecer os mais novos jogos educativos!</h1>
+                        <p class="d-none d-md-block">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi ducimus consequatur laudantium, ex velit veritatis facilis cumque blanditiis ipsam modi fuga ut incidunt quis, accusantium quia repudiandae laboriosam numquam debitis.</p>
+                        <a href="produtos.html">Saiba Mais </a>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--Fim Banner -->
+<!-- Inicio Destaque -->
+<div class="destaque">
+<div class="container">
+    <div class="row d-flex justify-content-center">
+        <!--Inicio da tag section do texto de destaque -->
+        <section class="col-12">
+            <h2> Que tal conhecer as coleçoes de Games!</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, omnis fugit. Aspernatur accusamus dolore amet veritatis atque accusantium magni voluptas quaerat ullam sapiente. Et quos corrupti veritatis, quasi placeat earum.</p>
+        </section>
+        <!--Fim da tag section do texto de destaque -->
+        <!-- Inicio imagem 1 -->
+        <div class="col-6 col-md-2 pr-0">
+            <figure>
+                <a href="produtos.html"><img src="./img/en-saturno.webp"
+                alt="figura-destaque" width="100%"></a>
+                <figcaption>Jogo <br> Ano</figcaption>  
+            </figure>
+        </div>
+        <!--Fim da imagem 1 -->
+        <!-- Inicio imagem 2 -->
+        <div class="col-6 col-md-2 pr-0">
+            <figure>
+                <a href="produtos.html"><img src="./img/planets-darkness.jpg"
+                alt="figura-destaque" width="100%"></a>
+                <figcaption>Jogo <br> Ano</figcaption>  
+            </figure>
+        </div>
+        <!--Fim da imagem 2 -->
+        <!-- Inicio imagem 3 -->
+        <div class="col-6 col-md-2 pr-0">
+            <figure>
+                <a href="produtos.html"><img src="./img/planeta terra.jpg"
+                alt="figura-destaque" width="100%"></a>
+                <figcaption>Jogo <br> Ano</figcaption>  
+            </figure>
+        </div>
+        <!--Fim da imagem 3 -->
+        <!-- Inicio imagem 4 -->
+        <div class="col-6 col-md-2 pr-0">
+            <figure>
+                <a href="produtos.html"><img src="./img/saturno realista.jpg"
+                alt="figura-destaque" width="100%"></a>
+                <figcaption>Jogo <br> Ano</figcaption>  
+            </figure>
+        </div>
+        <!--Fim da imagem 4 -->
+        <!-- Inicio imagem 5 -->
+        <div class="col-6 col-md-2 pr-0">
+            <figure>
+                <a href="produtos.html"><img src="./img/sistema saturno.webp"
+                alt="figura-destaque" width="100%"></a>
+                <figcaption>Jogo <br> Ano</figcaption>  
+            </figure>
+        </div>
+        <!--Fim da imagem 5 -->
+        <!-- Inicio imagem 6 -->
+        <div class="col-6 col-md-2 pr-0">
+            <figure>
+                <a href="produtos.html"><img src="./img/world.jpeg"
+                alt="figura-destaque" width="100%"></a>
+                <figcaption>Jogo <br> Ano</figcaption>  
+            </figure>
+        </div>
+            <!--Fim da imagem 6 -->
+        <div class="col-12">
+            <a href="#">Saiba Mais </a>
+        </div>
+        <!--Fim Saiba Mais -->
+    <div>
+ </div>
+</div>
+<!--Fim Destaque -->
+<!-- Início do texto das novidades -->
+<div class="novidades" id:="novidades-mobile">
+    <div class="container-fluid">
+        <div class="row">
+        <div class= "col-md-6">
+        <section class="text-body">
+        <h2>Conheça nossas novidades</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis temporibus recusandae officia quos nostrum cumque commodi nisi accusamus sint ad deserunt, omnis reiciendis voluptate mollitia dolorum soluta eveniet quisquam ipsam!</p>
+        <a class="btn-banner" href="#" target="_blank">Saiba Mais</a>
+        </section>
+</div>
+<!-- Fim do texto novidades -->
+<!-- Início da imagem novidades -->
+<div class="col-md-6">
+    <figure>
+        <img src="./img/saturn.jpg" class="img-fluid"
+        alt="banner-home">
+    </figure>
+    <div>
+        <!-- Fim da imagem novidades -->
+     <div> 
+  </div>
+</div>
+<!-- Início Galeria -->
+<div class="galeria d-flex align-itens-center">
+    <div class="container">
+        <div class="row">
+    <!--Início texto Galerias -->
+<div class="col-12">
+    <section class="texto-galeria">
+        <h2>Conheça nossa galeria</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque consectetur saepe quia quae porro vitae mollitia perspiciatis sequi ex fugit inventore natus, sit earum minus praesentium ipsam commodi quaerat quidem!</p>
+        </section>
+</div>
+<!-- Fim texto galerias -->
+<!-- Inicio Imagem 1 da galeria -->
+<div class="gallery-col-6 col-md-3">
+    <img src="./img/planet saturn.jpg" class="img-fluid" alt="img-galeria">
+</div>
+<!--Fim Imagem 1 da galeria -->
+<!-- Inicio Imagem 2 da galeria -->
+<div class="gallery-col-6 col-md-3">
+    <img src="./img/saturno realista.jpg" class="img-fluid" alt="img-galeria">
+</div>
+<!--Fim Imagem 2 da galeria -->
+<!-- Inicio Imagem 3 da galeria -->
+<div class="gallery-col-6 col-md-3">
+    <img src="./img/planeta.jpg" class="img-fluid" alt="img-galeria">
+</div>
+<!--Fim Imagem 3 da galeria -->
+<!-- Inicio Imagem 4 da galeria -->
+<div class="gallery-col-6 col-md-3">
+    <img src="./img/saturn.jpg" class="img-fluid" alt="img-galeria">
+</div>
+<!--Fim Imagem 4 da galeria -->
+<!-- Inicio Imagem 5 da galeria -->
+<div class="gallery-col-6 col-md-3">
+    <img src="./img/planeta aneis.avif" class="img-fluid" alt="img-galeria">
+</div>
+<!--Fim Imagem 5 da galeria -->
+<!-- Inicio Imagem 6 da galeria -->
+<div class="gallery-col-6 col-md-3">
+    <img src="./img/sistema saturno.webp" class="img-fluid" alt="img-galeria">
+</div>
+<!--Fim Imagem 6 da galeria -->
+<!-- Inicio Imagem 7 da galeria -->
+<div class="gallery-col-6 col-md-3">
+    <img src="./img/jpg planetaa.webp" class="img-fluid" alt="img-galeria">
+</div>
+<!--Fim Imagem 7 da galeria -->
+<!-- Inicio Imagem 8 da galeria -->
+<div class="gallery-col-6 col-md-3">
+    <img src="./img/planeta terra.jpg" class="img-fluid" alt="img-galeria">
+</div>
+<!--Fim Imagem 8 da galeria -->
+<!-- Inicio Imagem 9 da galeria -->
+<div class="gallery-col-6 col-md-3">
+    <img src="./img/astrologia jpg.jpg" class="img-fluid" alt="img-galeria">
+</div>
+<!--Fim Imagem 9 da galeria -->
+<!-- Inicio Imagem 10 da galeria -->
+<div class="gallery-col-6 col-md-3">
+    <img src="./img/planets-darkness.jpg" class="img-fluid" alt="img-galeria">
+</div>
+<!--Fim Imagem 10 da galeria -->
+<!-- Inicio Imagem 11 da galeria -->
+<div class="gallery-col-6 col-md-3">
+    <img src="./img/world.jpeg" class="img-fluid" alt="img-galeria">
+</div>
+<!--Fim Imagem 11 da galeria -->
+<!-- Inicio Imagem 12 da galeria -->
+<div class="gallery-col-6 col-md-3">
+    <img src="./img/aneis saturno.jpg" class="img-fluid" alt="img-galeria">
+</div>
+    <!--Fim Imagem 12 da galeria -->
+    </div> 
+  <div>
+</div>
+<!--Fim da Galeria -->
+<!--Início footer -->
+<footer class="rodapé">
+    <div class="container">
+    <div class="row m-0">
+        <!-- Início Logo -->
+        <div class="col-md-4">
+        <figure>
+            <img src="./img/logo.avif" alt="logo_rodapé" width="40px;">
+        </figure>
+    </div>
+    <!-- Fim Logo -->
+    <!-- Início Texto -->
+    <div classs="col-md-4">
+        <div class="info-contato">
+        <p> Email:</p>
+        <p>example@corp,net</p><br>
+        <p>Endereço:</p>
+        <p>Avenida ABC, 123</p><br>
+        <p>Telefone:</p>
+        <p>+55 (15) 5555-1234</p>
+        </div>
+    </div> 
+    <!-- Fim Texto -->
+    <!-- Início das Mídias Sociais -->
+    <!-- Alt + Shift + Seta para baixo > Duplica Linha -->
+    <!-- Ctrl + Space > Mostra o caminho do objeto dentro do SRC -->
+    <div class="col-md-4">
+        <figure class="redes-sociais">
+            <a href="e"><img src="img/face.png" alt="Facebook"</a>
+            <a href="e"><img src="img/insta.png" alt="Instagram"</a>
+            <a href="e"><img src="img/youtube.png" alt="Youtube"</a>
+            <a href="e"><img src="img/linkedin.png" alt="Linkedin"</a>
+        </figure>
+        <br>
+        <a href="index.html">Home</a>
+        <a href="produtos.html">Produtos</a>
+        <a href="streaming.html">#Streaming</a>
+        <a href="contato.html">Contatos</a>
+    </div>
+    <!-- Fim Midias Sociais -->
+    <!-- Início Direitos Autorais -->
+    <div class="col-12">
+        <p class="direitos">Direitos Autorais</p>
+    </div>
+    <!-- Fim Direitos Autorais -->
+   </div>
+</div>
+</footer>
+<!-- Fim Rodapé -->
+
+
 </body>
+
+<script type="text/javascript" src="./bootstrap/js/bootstrap.min.js">
+
+</script>
+
 </html>

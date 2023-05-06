@@ -1,15 +1,222 @@
-/* Aula 01 - 01/04/2023 */
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+/* Aula 01-04-03*/
 
-    body, ul {
-        margin: 0px;
-        padding: 0px;
-    }
+body, ul{
+    margin:0px;
+    padding:0px;
+}
 
-    #menu {
-        height: 180px;
-        width: 110%;
-    }
+#header #menu a{
+    color: rgba(151, 73, 161, 0.911);
+    text-decoration: none;
+    font-family:'Oswald';
+    text-transform: uppercase;
+    font-size: 1.4em;
+    transition: 0.3s;
+}
+#header #menu a:hover{
+font-size: 2em;
+transition:0.3s;
+text-shadow: 4px 4px 6px #ffffff;
+}
 
-    #menu #logo img {
-        height: 250px;
-    }
+#logo img:hover {
+   box-shadow:4px  4px 6px #ffffff;
+   transition:0.3;
+
+}
+#logo img{
+    float: left;
+    height: 110px;
+    position: relative;
+    top:0px ;
+    left: 5px;
+    border-radius: 200px; /* Criar borda circular na imagem */
+}
+#header {
+    width: 100%;
+    position: relative;
+    z-index: 90;
+    box-sizing: border-box;
+    height: 100px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fffdfd;
+
+}
+#menu {
+    display: flex;
+    list-style: none;
+    gap: 0.5rem;
+}
+#btn-mobile {
+    display: none;
+}
+/*
+#carouselExampleInterval {
+    position: relative;
+    z-index: 10;
+    padding-top: 5px;
+} 
+*/
+#carouselExampleInterval {
+    position: relative;
+    z-index: 10;
+    margin-left: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    box-shadow: 6px 6px 8px #000000b4;
+    transition: 0.3;
+    place-items: normal legacy;
+    margin-block: 10px;
+    height: auto;
+}
+#carouselExampleInterval .carousel-inner img {
+    max-height: 600px;
+    width: 100%;
+}
+/* Estilo CSS Banner */
+.section-banner-home {
+width: 100%;
+height: 480px;
+margin-top: 10px;
+padding: 50px;
+background-color: rgb(151, 49, 143);
+}
+.section-banner-homeb img {
+height: 600px;
+}
+.section-banner-home .texto-banner {
+    margin-top: 30px;
+    font-size: 22px;
+}
+.section-banner-home .texto-banner h1 {
+    font-size: 30px;
+    width: 60%;
+    font-weight: 500;
+    padding-bottom: 20px;
+    color:white;
+}
+.section-banner-home .texto-banner p{
+    font-size: 15px;
+    margin-bottom: 20px;
+    color:white
+}
+.section-banner-home .texto-banner a{
+    color: #000;
+    text-decoration: none;
+    background-color: rgb(237, 237, 245);
+    padding: 4px 14px;
+    font-size: 15px;
+}
+.section-banner-home .texto-banner a:hover {
+    color:rgb(99, 10, 141);
+    text-shadow: 2px 2px 4px #1d1b1bbd;
+    font-size: 18px;
+    font-weight: bold;
+}
+/* Fim CSS Banner */
+
+/* CSS Destaque */
+.destaque h2 {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+.destaque p {
+    width: 77%;
+    text-align: center;
+    font-size: 14px;
+    margin: 30px auto;
+}
+.destaque figcaption {
+    font-size: 13px;
+    color:black;
+    text-decoration:none;
+    font-weight: bold;
+    text-align: center;
+}
+.destaque a {
+    justify-content: center;
+    display: flex;
+    text-decoration: none;
+    color:rgb(133, 43, 218);
+    font-size: 18px;
+    font-weight: bold;
+    margin: 30px 0;
+}
+/* Fim CSS Destaque */
+
+/* CSS Novidades */
+.novidades .text-body {
+    width: 80%;
+    margin: 70px auto;
+}
+.novidades h2 {
+    color:rgb(99, 10, 141);
+    font-size: 26px;
+    width: 70px;
+}
+.novidades p {
+    color: rgb(99, 10, 141)
+}
+.novidades a {
+    color: rgb(255, 255,255);
+    text-decoration: underline;
+    text-decoration-color: violet;
+    padding: 6px 12px;
+    background-color: rgb(0, 68, 194) ;
+    font-weight: 400;
+}
+/* Fim CSS Novidades */
+
+/* Início CSS Galerias */
+
+.galeria {
+    margin: 60px auto 20px;
+}
+.galeria h2 {
+    text-align: center;
+    font-size: 24px;
+}
+.galeria p {
+    text-align: center;
+    width: 50%;
+    margin: 14px auto 50px;
+}
+.galeria .gallery {
+    width: 30px;
+    margin: 14px auto 50px;
+}
+/* Fim CSS Galerias */
+
+/* Início CSS Footer */
+
+.rodapé {
+    padding: 50px 50px 0; 
+}
+.rodapé .info-contato p {
+    margin: 0px;
+}
+.rodapé a {
+    text-decoration: none;
+    color:black;
+    font-size: 13px;
+}
+.rodapé a:houver {
+    font-weight: bold;
+}
+.rodapé .redes-sociais {
+    display: inline-block;
+}
+.rodapé .redes-sociais img {
+    width: 45px;
+    height: 40px;
+}
+.rodapé p.direitos {
+    text-align: center;
+    margin-top: 40px;
+}
