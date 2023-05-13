@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=Fjalla One);
 /* Aula 01-04-03*/
 
 body, ul{
@@ -7,44 +7,43 @@ body, ul{
 }
 
 #header #menu a{
-    color: rgba(151, 73, 161, 0.911);
+    color: rgba(178, 95, 189, 0.979);
     text-decoration: none;
-    font-family:'Oswald';
+    font-family:'Fjalla One';
     text-transform: uppercase;
-    font-size: 1.4em;
+    font-size: 1.5em;
     transition: 0.3s;
 }
 #header #menu a:hover{
 font-size: 2em;
 transition:0.3s;
-text-shadow: 4px 4px 6px #ffffff;
+text-shadow: 4px 4px 6px #5a565aec;
 }
 
 #logo img:hover {
-   box-shadow:4px  4px 6px #ffffff;
+   box-shadow:4px  4px 6px rgb(92, 7, 100);
    transition:0.3;
 
 }
 #logo img{
     float: left;
-    height: 110px;
+    height: 105px;
     position: relative;
     top:0px ;
     left: 5px;
-    border-radius: 200px; /* Criar borda circular na imagem */
+    border-radius: 180px; /* Criar borda circular na imagem */
 }
 #header {
-    width: 100%;
+    width: 110%;
     position: relative;
     z-index: 90;
     box-sizing: border-box;
-    height: 100px;
+    height: 120px;
     padding: 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #fffdfd;
-
+    background: rgb(92, 7, 100);
 }
 #menu {
     display: flex;
@@ -67,7 +66,7 @@ text-shadow: 4px 4px 6px #ffffff;
     margin-left: 5px;
     margin-left: 10px;
     margin-right: 10px;
-    box-shadow: 6px 6px 8px #000000b4;
+    box-shadow: 6px 6px 8px #918d8db4;
     transition: 0.3;
     place-items: normal legacy;
     margin-block: 10px;
@@ -77,42 +76,106 @@ text-shadow: 4px 4px 6px #ffffff;
     max-height: 600px;
     width: 100%;
 }
+@media (max-width: 600px) {
+    #menu {
+        display: block;
+        position: absolute;
+        width: 15em;
+        top: 70px;
+        right: 0px;
+        background: rgb(187, 183, 183);
+        transition: 0.6s;
+        z-index: 1000;
+        height: 0px;
+        padding-left: 5px;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+    #menu li {
+        padding-top: 30px;
+        padding-bottom: 0px;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(197, 190, 190, 0.986);
+    }
+    #nav.active #menu {
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: hidden; 
+    }
+    #btn-mobile {
+        display: flex;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: 0.5rem;
+    }
+    #hamburger {
+        border-top: 3px solid; /* Melhorando o hamburger >> Espessura de cada linha */
+        width: 35px; /* Melhorando o hamburger >> Largura */
+        color: white; /* Alterando a cor do hamburger */
+    }
+    #hamburger::after,
+    #hamburger::before {
+        content: '';
+        display: block;
+        width: 35px; /* Melhorando o hamburger >> Largura */
+        height: 2px;
+        background: currentColor;
+        margin-top: 4px; /* Melhorando o hamburger >> Espaçamento entre o hamburger */
+        transition: 0.6s;
+        position: relative;
+        border-top: 3px solid; /* Melhorando o hamburger >> Espessura de cada linha */
+    }
+    #nav.active #hamburger {
+        border-top-color: transparent;
+    }
+    #nav.active #hamburger::before {
+        transform: rotate (135deg);
+    }
+    #nav.active #hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+}
+
 /* Estilo CSS Banner */
 .section-banner-home {
 width: 100%;
-height: 480px;
+height: 500px;
 margin-top: 10px;
 padding: 50px;
-background-color: rgb(151, 49, 143);
+background-color: rgb(92, 7, 100);
 }
-.section-banner-homeb img {
-height: 600px;
+.section-banner-home img {
+height: 500;
 }
 .section-banner-home .texto-banner {
-    margin-top: 30px;
+    margin-top: 40px;
     font-size: 22px;
 }
 .section-banner-home .texto-banner h1 {
-    font-size: 30px;
-    width: 60%;
-    font-weight: 500;
+    font-size: 35px;
+    width: 70%;
+    font-weight: 400;
     padding-bottom: 20px;
-    color:white;
+    color: rgb(20, 19, 20)
 }
 .section-banner-home .texto-banner p{
-    font-size: 15px;
-    margin-bottom: 20px;
+    font-size: 25px;
+    margin-bottom: 30px;
     color:white
 }
 .section-banner-home .texto-banner a{
     color: #000;
     text-decoration: none;
-    background-color: rgb(237, 237, 245);
+    background-color: rgb(194, 194, 201);
     padding: 4px 14px;
     font-size: 15px;
 }
 .section-banner-home .texto-banner a:hover {
-    color:rgb(99, 10, 141);
+    color:rgb(85, 37, 105);
     text-shadow: 2px 2px 4px #1d1b1bbd;
     font-size: 18px;
     font-weight: bold;
@@ -133,7 +196,7 @@ height: 600px;
     margin: 30px auto;
 }
 .destaque figcaption {
-    font-size: 13px;
+    font-size: 20px;
     color:black;
     text-decoration:none;
     font-weight: bold;
@@ -143,8 +206,8 @@ height: 600px;
     justify-content: center;
     display: flex;
     text-decoration: none;
-    color:rgb(133, 43, 218);
-    font-size: 18px;
+    color:rgb(99, 10, 141);
+    font-size: 33px;
     font-weight: bold;
     margin: 30px 0;
 }
@@ -157,8 +220,8 @@ height: 600px;
 }
 .novidades h2 {
     color:rgb(99, 10, 141);
-    font-size: 26px;
-    width: 70px;
+    font-size: 45px;
+    width: 75px;
 }
 .novidades p {
     color: rgb(99, 10, 141)
@@ -166,7 +229,7 @@ height: 600px;
 .novidades a {
     color: rgb(255, 255,255);
     text-decoration: underline;
-    text-decoration-color: violet;
+    text-decoration-color: rgb(235, 175, 235);
     padding: 6px 12px;
     background-color: rgb(0, 68, 194) ;
     font-weight: 400;
@@ -195,28 +258,28 @@ height: 600px;
 
 /* Início CSS Footer */
 
-.rodapé {
-    padding: 50px 50px 0; 
+.rodape {
+    padding: 50px 50px 0;
 }
-.rodapé .info-contato p {
+.rodape .info-contato p {
     margin: 0px;
 }
-.rodapé a {
+.rodape a {
     text-decoration: none;
-    color:black;
-    font-size: 13px;
+    color: #302a8d;
+    font-size: 15px;
 }
-.rodapé a:houver {
+.rodape a:hover {
     font-weight: bold;
 }
-.rodapé .redes-sociais {
+.rodape .redes-sociais {
     display: inline-block;
 }
-.rodapé .redes-sociais img {
+.rodape .redes-sociais img {
     width: 45px;
     height: 40px;
 }
-.rodapé p.direitos {
+.rodape p.direitos {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 45px;
 }
