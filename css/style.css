@@ -1,13 +1,14 @@
-@import url(https://fonts.googleapis.com/css?family=Fjalla One);
+@import url(https://fonts.googleapis.com/css?family=Fjalla+One);
 /* Aula 01-04-03*/
 
 body, ul{
     margin:0px;
     padding:0px;
+    background-color: rgba(209, 194, 233, 0.979);
 }
 
 #header #menu a{
-    color: rgba(178, 95, 189, 0.979);
+    color: rgba(179, 139, 236, 0.979);
     text-decoration: none;
     font-family:'Fjalla One';
     text-transform: uppercase;
@@ -17,21 +18,20 @@ body, ul{
 #header #menu a:hover{
 font-size: 2em;
 transition:0.3s;
-text-shadow: 4px 4px 6px #5a565aec;
+text-shadow: 4px 4px 6px #aa99aaec;
 }
 
 #logo img:hover {
-   box-shadow:4px  4px 6px rgb(92, 7, 100);
+   box-shadow:4px  4px 6px rgba(188, 164, 212, 0.979);
    transition:0.3;
-
 }
 #logo img{
     float: left;
-    height: 105px;
+    height: 75px;
     position: relative;
-    top:0px ;
-    left: 5px;
-    border-radius: 180px; /* Criar borda circular na imagem */
+    top: 0px ;
+    left: 0px;
+    border-radius: 95px; /* Criar borda circular na imagem */
 }
 #header {
     width: 110%;
@@ -43,7 +43,7 @@ text-shadow: 4px 4px 6px #5a565aec;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: rgb(92, 7, 100);
+    background: rgba(18, 18, 19, 0.979);
 }
 #menu {
     display: flex;
@@ -66,7 +66,7 @@ text-shadow: 4px 4px 6px #5a565aec;
     margin-left: 5px;
     margin-left: 10px;
     margin-right: 10px;
-    box-shadow: 6px 6px 8px #918d8db4;
+    box-shadow: 6px 6px 8px #000000b4;
     transition: 0.3;
     place-items: normal legacy;
     margin-block: 10px;
@@ -83,7 +83,7 @@ text-shadow: 4px 4px 6px #5a565aec;
         width: 15em;
         top: 70px;
         right: 0px;
-        background: rgb(187, 183, 183);
+        background: rgb(102, 96, 96);
         transition: 0.6s;
         z-index: 1000;
         height: 0px;
@@ -112,7 +112,7 @@ text-shadow: 4px 4px 6px #5a565aec;
         gap: 0.5rem;
     }
     #hamburger {
-        border-top: 3px solid; /* Melhorando o hamburger >> Espessura de cada linha */
+        border-top: 2px solid; /* Melhorando o hamburger >> Espessura de cada linha */
         width: 35px; /* Melhorando o hamburger >> Largura */
         color: white; /* Alterando a cor do hamburger */
     }
@@ -120,13 +120,13 @@ text-shadow: 4px 4px 6px #5a565aec;
     #hamburger::before {
         content: '';
         display: block;
-        width: 35px; /* Melhorando o hamburger >> Largura */
+        width: 30px; /* Melhorando o hamburger >> Largura */
         height: 2px;
         background: currentColor;
-        margin-top: 4px; /* Melhorando o hamburger >> Espaçamento entre o hamburger */
-        transition: 0.6s;
+        margin-top: 5px; /* Melhorando o hamburger >> Espaçamento entre o hamburger */
+        transition: 0.4s;
         position: relative;
-        border-top: 3px solid; /* Melhorando o hamburger >> Espessura de cada linha */
+        border-top: 2px solid; /* Melhorando o hamburger >> Espessura de cada linha */
     }
     #nav.active #hamburger {
         border-top-color: transparent;
@@ -136,46 +136,47 @@ text-shadow: 4px 4px 6px #5a565aec;
     }
     #nav.active #hamburger::after {
         transform: rotate(-135deg);
-        top: -7px;
+        top: -10px;
     }
 }
 
 /* Estilo CSS Banner */
 .section-banner-home {
-width: 100%;
-height: 500px;
-margin-top: 10px;
+width: 110%;
+height: 420px;
+margin-top: 100px;
 padding: 50px;
-background-color: rgb(92, 7, 100);
+background-color: rgba(208, 192, 231, 0.979);
 }
 .section-banner-home img {
-height: 500;
+height: 100;
+width: 100;
 }
 .section-banner-home .texto-banner {
-    margin-top: 40px;
-    font-size: 22px;
+    margin-top: 45px;
+    font-size: 20px;
 }
 .section-banner-home .texto-banner h1 {
     font-size: 35px;
     width: 70%;
     font-weight: 400;
     padding-bottom: 20px;
-    color: rgb(20, 19, 20)
+    color: rgb(12, 11, 12)
 }
 .section-banner-home .texto-banner p{
     font-size: 25px;
     margin-bottom: 30px;
-    color:white
+    color:rgb(17, 16, 17);
 }
 .section-banner-home .texto-banner a{
-    color: #000;
+    color: rgb(211, 146, 226);
     text-decoration: none;
-    background-color: rgb(194, 194, 201);
+    background-color: rgb(105, 105, 107);
     padding: 4px 14px;
     font-size: 15px;
 }
 .section-banner-home .texto-banner a:hover {
-    color:rgb(85, 37, 105);
+    color:rgb(207, 115, 235);
     text-shadow: 2px 2px 4px #1d1b1bbd;
     font-size: 18px;
     font-weight: bold;
@@ -188,16 +189,18 @@ height: 500;
     text-align: center;
     font-size: 24px;
     font-weight: bold;
+    color:rgb(20, 19, 19);
 }
 .destaque p {
     width: 77%;
     text-align: center;
     font-size: 14px;
     margin: 30px auto;
+    color:rgb(5, 5, 5);
 }
 .destaque figcaption {
     font-size: 20px;
-    color:black;
+    color: 2px 2px 4px rgb(14, 13, 14);
     text-decoration:none;
     font-weight: bold;
     text-align: center;
@@ -206,7 +209,7 @@ height: 500;
     justify-content: center;
     display: flex;
     text-decoration: none;
-    color:rgb(99, 10, 141);
+    color:rgb(7, 7, 7);
     font-size: 33px;
     font-weight: bold;
     margin: 30px 0;
@@ -219,15 +222,15 @@ height: 500;
     margin: 70px auto;
 }
 .novidades h2 {
-    color:rgb(99, 10, 141);
+    color:rgba(12, 12, 12, 0.863);
     font-size: 45px;
     width: 75px;
 }
 .novidades p {
-    color: rgb(99, 10, 141)
+    color: rgb(10, 10, 10)
 }
 .novidades a {
-    color: rgb(255, 255,255);
+    color: rgb(255, 255, 255);
     text-decoration: underline;
     text-decoration-color: rgb(235, 175, 235);
     padding: 6px 12px;
@@ -243,16 +246,21 @@ height: 500;
 }
 .galeria h2 {
     text-align: center;
-    font-size: 24px;
+    font-size: 29px;
+    color:rgb(5, 5, 5);
 }
 .galeria p {
     text-align: center;
     width: 50%;
     margin: 14px auto 50px;
+    color: rgb(0, 0, 0);
 }
 .galeria .gallery {
     width: 30px;
     margin: 14px auto 50px;
+}
+.galeria .gallery img{
+    height: 70px;
 }
 /* Fim CSS Galerias */
 
@@ -261,13 +269,25 @@ height: 500;
 .rodape {
     padding: 50px 50px 0;
 }
+.rodape .container #logo-rodape img {
+    height: 140px;
+    width: 100px;
+    padding-left: 10px;
+    transition: transform .3s;
+    display: block;
+}
+.rodape .container img:hover {
+    transform: scale(1.5);
+    box-shadow: 0 0 10px rgba(0,0,0,0.2)
+}
 .rodape .info-contato p {
     margin: 0px;
+    color: rgb(14, 13, 13);
 }
 .rodape a {
     text-decoration: none;
-    color: #302a8d;
-    font-size: 15px;
+    color: #8782c9;
+    font-size: 14px;
 }
 .rodape a:hover {
     font-weight: bold;
@@ -278,8 +298,61 @@ height: 500;
 .rodape .redes-sociais img {
     width: 45px;
     height: 40px;
+    padding-left: 0;
+    margin-left: 0.5rem;
+    transition: transform .3s;
+    border-radius: 110px; /* Arredondando div do objeto redes sociais */
+}
+.rodape .redes-sociais img:hover {
+    transform: scale(1.5);
+    box-shadow: 0 0 10px rgba(187, 180, 180, 0.2)
 }
 .rodape p.direitos {
     text-align: center;
     margin-top: 45px;
+    color: white;
 }
+/* Início CSS Streaming */
+
+.embed-container {
+    position: relative;
+    padding-bottom: 0;
+    height: alto;
+    max-width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 80px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+}
+.embed-container h2 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+.embed-container p {
+    text-align: center;
+    font-size: 20px;
+}
+.embed-container iframe {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    border-radius: 1rem;
+    box-shadow: gray 0.5 0.5 0.3em;
+    transition: .3s;
+    display: flex;
+}
+.embed-container iframe:hover {
+    flex: 1;
+    z-index: 1;
+    transform: scale(1.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.446);
+}
+.embed-container .col-lg-4 {
+    margin-top: 20px;
+}
+/* Fim CSS Streaming */
